@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import styled from 'styled-components';
 
  const ControlledCarousel = () => {
     const [index, setIndex] = useState(0);
@@ -15,8 +14,8 @@ import styled from 'styled-components';
       <Carousel activeIndex={index} direction={direction} onSelect={handleSelect}>
         <Carousel.Item>
           <img
-            className="d-block w-100"
-            src="../../Assets/1.jpg"
+            className="d-flex w-100"
+            src={require("../../Assets/4.jpg")}
             alt="First slide"
           />
           <Carousel.Caption>
@@ -26,8 +25,8 @@ import styled from 'styled-components';
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=Second slide&bg=282c34"
+            className="d-flex w-100"
+            src={require ("../../Assets/1.jpg")}
             alt="Second slide"
           />
   
@@ -38,8 +37,8 @@ import styled from 'styled-components';
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=Third slide&bg=20232a"
+            className="d-flex w-100"
+            src={require("../../Assets/3.jpg")}
             alt="Third slide"
           />
   

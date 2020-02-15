@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,6 +20,8 @@ import { Login } from './Pages/Login/login';
 import { Layout } from './Components/Shared/Layout';
 import {NavBar} from './Components/Shared/NavBar';
 
+
+
 //Componenst
 //import Navbar from './Components/Shared/Navbar/Navbar';
 
@@ -27,10 +30,10 @@ class App extends Component {
    return (
      <React.Fragment>
      <NavBar></NavBar>
-     <Layout/>
+        <Layout/>
        <Router>
          <Switch>
-           <Route exact path= "/Pages/Home" component={HomePage}/>
+           <Route exact path= "/" component={HomePage}/>
            <Route path= "/Pages/Details" component={Details}/>
            <Route path= "/Pages/Login" component={Login}/>
            <Route component = {NoMatch}/>
