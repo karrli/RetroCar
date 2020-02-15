@@ -6,9 +6,8 @@ export const HomePage = () => {
 return (
 <div>
     <h1>
-        este es
     </h1>
-    <h2> el Home
+    <h2>
     </h2>
     <ControlledCarrousel/>
     <Retroaxios/>
